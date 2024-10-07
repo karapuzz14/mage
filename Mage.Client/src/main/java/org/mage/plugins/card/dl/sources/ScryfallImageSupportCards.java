@@ -504,6 +504,7 @@ public class ScryfallImageSupportCards {
             add("CC2"); // Commander Collection: Black
             add("NEO"); // Kamigawa: Neon Dynasty
             add("YNEO"); // Alchemy: Kamigawa
+            add("RNEO"); // Rebalanced cards from Alchemy: Kamigawa (direct download links)
             add("NEC"); // Neon Dynasty Commander
             add("PL22"); // Year of the Tiger 2022
             add("SNC"); // Streets of New Capenna
@@ -657,6 +658,9 @@ public class ScryfallImageSupportCards {
             put("REX/Mountain/24b", "https://api.scryfall.com/cards/rex/24/en?format=image&face=back");
             put("REX/Plains/21b", "https://api.scryfall.com/cards/rex/21/en?format=image&face=back");
             put("REX/Swamp/23b", "https://api.scryfall.com/cards/rex/23/en?format=image&face=back");
+
+            // Alchemy: Kamigawa Rebalanced
+            put("RNEO/A-Akki Ronin", "https://api.scryfall.com/cards/neo/A-131/");
         }
     };
 

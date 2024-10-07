@@ -16,7 +16,7 @@ import java.util.UUID;
 /**
  * @author TheElk801
  */
-public final class AkkiRonin extends CardImpl {
+public class AkkiRonin extends CardImpl {
 
     public AkkiRonin(UUID ownerId, CardSetInfo setInfo) {
         super(ownerId, setInfo, new CardType[]{CardType.CREATURE}, "{1}{R}");
@@ -30,6 +30,10 @@ public final class AkkiRonin extends CardImpl {
         this.addAbility(new AttacksAloneControlledTriggeredAbility(new DoIfCostPaid(
                 new DrawCardSourceControllerEffect(1), new DiscardCardCost()
         ), StaticFilters.FILTER_CONTROLLED_SAMURAI_OR_WARRIOR, false, false));
+    }
+
+    protected AkkiRonin(UUID ownerId, CardSetInfo setInfo, CardType[] cardTypes, String costs) {
+        super(ownerId, setInfo, cardTypes, costs);
     }
 
     private AkkiRonin(final AkkiRonin card) {
